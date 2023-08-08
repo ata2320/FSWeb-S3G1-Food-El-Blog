@@ -1,21 +1,35 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
 
-
-h1 {
-  font-family: 'Gaegu', cursive;
-  margin: 20px 0;
-  /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 10px;
+/*======= "*" bir universal selector olarak kullanılır yapılan değişiklik tüm satırları etkiler */
+* {
+  color: #3c373b;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Gaegu', cursive;
+h1 {
+  font-family: "Gaegu", cursive;
+  margin: 20px 0;
+  /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
+  font-size: 60px;
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gaegu", cursive;
   margin-bottom: 0;
   padding: 0 10px;
   /*=======  Font size'ı 30px yapın*/
-  font-size: 10px;
+  font-size: 30px;
 }
-
+* p {
+  font-size: 16px;
+  font-family: roboto;
+  padding: 10px;
+  line-height: 1.4;
+}
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
 
 font-size: 16px;
@@ -25,12 +39,21 @@ line-height: 1.4;
 
 */
 
+img {
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+}
 
 /*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
 
-  border-radius: 10px;
+border-radius: 10px;
 
 */
+.gri {
+  background: #f5f5f5;
+  padding: 30px;
+}
 
 .content-row {
   display: flex;
@@ -38,11 +61,14 @@ line-height: 1.4;
 
 .content-row div {
   /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
+  margin: 20px;
 }
 
 .container {
+  /*======= bunlar birer class ve selector olarak kullanılır*/
   /*======= width property yaratın. Değerini 750px olarak atayın */
   margin: 0 auto;
+  width: 750px;
 }
 
 .container header nav a {
@@ -54,12 +80,14 @@ line-height: 1.4;
   color: white;
   text-decoration: none;
   margin-bottom: 20px;
-   /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
-  
+  background: #e79947;
+  /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
 }
 
 .container header nav a:hover {
-/*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
+  /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
+  background: white;
+  color: #e79947;
 }
 
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
@@ -82,14 +110,13 @@ line-height: 1.4;
 
 footer {
   width: 100%;
-  background: #E79947;
+  background: #e79947;
   border-top: 1px dashed white;
 }
 
-footer .footer-content { 
-  margin: 0 auto; 
+footer .footer-content {
+  margin: 0 auto;
   /*======= width property yaratın. Değerini 750px olarak atayın */
-  
 }
 
 footer .footer-content h3 {
@@ -107,7 +134,6 @@ footer nav {
   text-decoration: underline;
 */
 
-
 footer nav a:first-child {
   margin-left: 0;
 }
@@ -118,5 +144,5 @@ footer nav a:first-child {
 
 footer .footer-content .copyright {
   padding: 20px 0;
-   /*======= metni ortalayacak kodu yazın */
+  /*======= metni ortalayacak kodu yazın */
 }
